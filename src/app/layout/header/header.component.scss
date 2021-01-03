@@ -1,3 +1,16 @@
 nav {
-    padding:  15px ; 
+    padding: 15px;
+    background-color: transparent !important;
+    border: 1px solid #dedede;
+}
+
+nav .navbar-nav .nav-item{
+    font-size: 18px;
+    margin: auto 5px;
+    padding: 14px 7px;
+    transition: 0.25s all;
+}
+
+nav .navbar-nav .nav-item:hover{
+    background-color: #ffeddf;
 }

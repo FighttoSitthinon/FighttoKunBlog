@@ -1,1 +1,5 @@
-<p>home works!</p>
+<div class="post-list">
+    <div class="post-item" *ngFor="let item of posts">
+        <a href="{{item.url}}" >{{item.name}}</a>
+    </div>
+</div>
