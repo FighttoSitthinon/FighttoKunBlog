@@ -17,6 +17,10 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { CategoryComponent } from './views/category/category.component';
+import { CreatePostComponent } from './views/create-post/create-post.component';
+
+import { AuthGuard } from './core/auth.guard';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     PageComponent,
     NotFoundComponent,
     AboutComponent,
+    CategoryComponent,
+    CreatePostComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +44,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     MatProgressSpinnerModule,
   ],
   providers: [
-
+    AuthGuard
   ],
   bootstrap: [AppComponent]
 })

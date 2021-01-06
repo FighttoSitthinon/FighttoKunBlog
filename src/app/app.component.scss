@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant|Sarabun&display=swap');
+
+$theme: #ef767a;
+$background_theme: #ffeddf;
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+a,
+span,
+table,
+label{
+  color: rgba(34, 34, 34, 0.911);
+  font-family: 'Assistant', 'Sarabun', sans-serif;
+  font-weight: 400;
+  line-height: 34px;
+}
+
 .page-wrapper{
     padding: 25px 0;
     font-size: 16px;
@@ -12,3 +36,24 @@
     transform: translate(-50%, -50%);
 }
 
+.center{
+    text-align: center;
+    margin: auto;
+}
+
+.shadow1 { 
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+  }
+  
+  .shadow2 { 
+    box-shadow: 0 7px 30px -10px rgba(72,68,68,0.85);
+  }
+
+a{
+    text-decoration: none;
+    transition: 0.25s all;
+  }
+
+  a:hover{
+      color: $theme;
+  }

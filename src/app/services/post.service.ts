@@ -37,7 +37,7 @@ export class PostService {
     #ปาฏิหาริย์ร้านชำของคุณนามิยะ
         `,
         categories: [
-          'book', ''
+          'book', 'fantasy', 'novel'
         ],
         url: '/page/001',
         isActived: true,

@@ -9,8 +9,12 @@ nav .navbar-nav .nav-item{
     margin: auto 5px;
     padding: 14px 7px;
     transition: 0.25s all;
+    border-radius: 5px;
 }
 
 nav .navbar-nav .nav-item:hover{
     background-color: #ffeddf;
+}
+nav  .navbar-brand{
+    font-weight: 600;
 }
