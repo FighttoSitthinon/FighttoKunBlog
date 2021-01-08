@@ -1,5 +1,15 @@
+<div class="title">
+    <h1>Lastest Posts</h1>
+</div>
 <div class="post-list">
-    <div class="post-item" *ngFor="let item of posts">
-        <a href="{{item.url}}" >{{item.name}}</a>
+    <div class="post-item shadow1" *ngFor="let item of posts">
+        <a href="{{item.url}}" >
+            <div class="cover-image">
+                <img src="{{item.cover}}" alt=" {{item.name}}">
+            </div>
+           <div class="post-name">
+                {{item.name}}
+           </div>
+        </a>
     </div>
 </div>

@@ -1,1 +1,27 @@
 @import "../../app.component.scss"; 
+
+.post-list{
+    border-top: 1px solid $border_color;
+    padding: 25px 0 0 0;
+}
+
+.post-list .post-item{
+    border-radius: 15px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 7px 15px;
+}
+
+.post-list .post-item .cover-image img{
+    width: 250px;
+    width: 350px;
+}
+
+.post-list .post-item .post-name{
+    padding: 10px 16px;
+    overflow: hidden;
+}
+
+.title h1{
+    font-weight: 600;
+}

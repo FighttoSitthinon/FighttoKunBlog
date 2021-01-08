@@ -1,7 +1,8 @@
+@import "../../app.component.scss"; 
 nav {
     padding: 15px;
     background-color: transparent !important;
-    border: 1px solid #dedede;
+    border: 1px solid $border_color;
 }
 
 nav .navbar-nav .nav-item{
@@ -13,8 +14,9 @@ nav .navbar-nav .nav-item{
 }
 
 nav .navbar-nav .nav-item:hover{
-    background-color: #ffeddf;
+    background-color: $background_theme;
 }
+
 nav  .navbar-brand{
     font-weight: 600;
 }
