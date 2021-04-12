@@ -1,14 +1,45 @@
-<div class="title">
-    <h1>Lastest Posts</h1>
+<div class="main-post">
+    <div class="post-item">
+        <a href="{{mainPost.url}}" >
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="cover-image">
+                        <img src="{{mainPost.cover}}" alt=" {{mainPost.name}}">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="description-group">
+                        <div class="category-tag">
+                            <div class="tag" *ngFor="let category of mainPost.categories">
+                                <span>{{category}}</span>
+                            </div>
+                        </div>
+                       <div class="post-name">
+                           <p> {{mainPost.name}}</p>
+                       </div>
+                       <div class="post-description">
+                            <p> {{mainPost.short_description}}</p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
 </div>
+
 <div class="post-list">
-    <div class="post-item shadow1" *ngFor="let item of posts">
+    <div class="post-item" *ngFor="let item of posts">
         <a href="{{item.url}}" >
             <div class="cover-image">
                 <img src="{{item.cover}}" alt=" {{item.name}}">
             </div>
+            <div class="category-tag">
+                <div class="tag" *ngFor="let category of item.categories">
+                    <span>{{category}}</span>
+                </div>
+            </div>
            <div class="post-name">
-                {{item.name}}
+               <p class="text-ellipsis"> {{item.name}}</p>
            </div>
         </a>
     </div>

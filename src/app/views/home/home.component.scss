@@ -1,27 +1,160 @@
 @import "../../app.component.scss"; 
 
+.main-post{
+    padding: 25px 0 40px 0;
+    margin-bottom: 12px;
+    display: block;
+    position: relative;
+
+    .post-item{
+        overflow: hidden;
+        margin: 7px 15px;
+        width: 100%;
+        display: block;
+        position: relative; 
+
+        .cover-image{
+            position: relative; 
+            background-color: #dedede;
+            padding-bottom: 66.66%;
+            height: 0;
+            img{
+                position: absolute;
+                height: auto;
+                width: 100%;
+            }
+        }
+
+        .description-group{
+            .post-name{
+                font-size: 24px;
+                font-weight: 600;
+            }
+    
+            .category-tag{
+                display: block;
+    
+                .tag{
+                    display: inline-block;
+                    padding: 0px 16px;
+                    margin-right: 15px;
+                    margin: 0 15px 5px 0;
+                    background-color: $background_theme;
+                    span{
+                        color: $theme !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main-post::after, .post-list::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    max-width: 500px;
+    height: 3px;
+    background-color: #dedede;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 7px;
+}
+
 .post-list{
-    border-top: 1px solid $border_color;
-    padding: 25px 0 0 0;
+    padding: 25px 0 35px 0;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+
+    .post-item{
+        overflow: hidden;
+        display: inline-block;
+        margin: 7px 15px;
+        width: 340px;
+
+        .cover-image{
+            position: relative;
+            background-color: #dedede;
+            padding-bottom: 66.66%;
+            height: 0;
+            img{
+                position: absolute;
+                height: auto;
+                width: 100%;
+            }
+        }
+
+        .post-name{
+    
+        }
+
+        .category-tag{
+            display: block;
+
+            .tag{
+                display: inline-block;
+                padding: 0px 16px;
+                margin-right: 15px;
+                margin: 15px 15px 5px 0;
+                background-color: $background_theme;
+                span{
+                    color: $theme !important;
+                }
+            }
+        }
+    }
 }
 
-.post-list .post-item{
-    border-radius: 15px;
-    overflow: hidden;
-    display: inline-block;
-    margin: 7px 15px;
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 }
 
-.post-list .post-item .cover-image img{
-    width: 250px;
-    width: 350px;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    
 }
 
-.post-list .post-item .post-name{
-    padding: 10px 16px;
-    overflow: hidden;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .main-post{
+        .post-item{
+            margin:auto;
+            .description-group{
+                .category-tag{
+                    .tag{
+                        
+                        padding: 0px 16px;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .post-list{
+        .post-item{
+            width: 100%;
+            margin:auto;
+            .description-group{
+                .category-tag{
+                    .tag{
+                    }
+                }
+            }
+        }
+    }
 }
 
-.title h1{
-    font-weight: 600;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    
 }

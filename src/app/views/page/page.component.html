@@ -6,19 +6,17 @@
     <div class="title">
         <h1>{{data.name}}</h1>
     </div>
-    <hr>
     <div class="category-group">
         <a class="category" *ngFor="let category of data.categories;" href="/category/{{category}}" target="_blank">
             {{category}}
         </a>
     </div>
-    <div class="cover-image center ">
+    <div class="cover-image">
         <img class="shadow2" src="{{data.cover}}" alt="cover {{data.name}}">
     </div>
     <div class="description">
         <div [innerHTML]="data.description "></div>
     </div>
-    <hr>
     <div class="more-detail">
         <p>Create By: {{data.created_by}}</p>
         <p>Lastest Updated: {{data.updated_date | date: 'dd/MMM/yyyy hh:mm:ss'}}</p>
